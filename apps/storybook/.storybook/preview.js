@@ -1,6 +1,6 @@
 import React from 'react';
 import { SystemProvider } from 'coral-system';
-import 'antd/dist/antd.css';
+import './preview.css';
 
 export const parameters = {
   actions: { argTypesRegex: '^on.*' },
@@ -21,3 +21,4 @@ const withSystemProvider = (Story, context) => {
 };
 
 export const decorators = [withSystemProvider];
+export const tags = ['autodocs']; // 可以开启 Doc 文档

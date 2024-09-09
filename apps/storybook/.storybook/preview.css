@@ -1,0 +1,6 @@
+@import 'antd/dist/antd.css';
+
+.sbdocs-content {
+  max-width: unset !important;
+  width: 90% !important;
+}

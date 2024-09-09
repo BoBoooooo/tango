@@ -1,7 +1,7 @@
 {
-  "name": "storybook",
+  "name": "docs",
   "version": "0.0.0",
-  "private": "true",
+  "private": true,
   "description": "> tango-apps docs",
   "license": "MIT",
   "author": "wwsun <sunweiwei01@corp.netease.com>",
@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "build": "echo \"skip\"",
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6008"
+    "storybook": "storybook dev -p 6008",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@music163/tango-setting-form": "*",
@@ -20,13 +20,17 @@
     "mobx-react-lite": "4.0.7"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^8.2.9",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
+    "@storybook/addon-styling-webpack": "^1.0.0",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-webpack5": "^8.2.9",
+    "babel-plugin-styled-components": "^2.1.4",
+    "storybook": "^8.2.9",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "@ant-design/icons": "^4.8.0",
-    "@storybook/addon-actions": "^6.5.14",
-    "@storybook/addon-essentials": "^6.5.14",
-    "@storybook/addon-links": "^6.5.14",
-    "@storybook/react": "^6.5.14",
-    "antd": "^4.24.2",
-    "babel-plugin-styled-components": "^2.0.7",
-    "tsconfig-paths-webpack-plugin": "^3.5.2"
+    "antd": "^4.24.2"
   }
 }
